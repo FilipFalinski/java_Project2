@@ -8,13 +8,15 @@ public class AppointmentSystem {
 
     public static void main(String[] args) {
 
-        Appointment A1 = new Appointment("jim","",23,0851413388);
-        Appointment A2 = new Appointment("joe","",18,0851493388);
-        Appointment A3 = new Appointment("jill","",34,0851416788);
-        Appointment A4 = new Appointment("janet","",64,0851413558);
-        Appointment A5 = new Appointment("tim","",89,0851423388);
 
-        Appointment allAppointments[] = {A1,A2,A3,A4,A5};
+
+        Appointment A1 = new Appointment("jim", "", 23, 0851413388);
+        Appointment A2 = new Appointment("joe", "", 18, 0851493388);
+        Appointment A3 = new Appointment("jill", "", 34, 0851416788);
+        Appointment A4 = new Appointment("janet", "", 64, 0851413558);
+        Appointment A5 = new Appointment("tim", "", 89, 0851423388);
+
+        Appointment allAppointments[] = {A1, A2, A3, A4, A5};
 
 
 
@@ -35,20 +37,31 @@ public class AppointmentSystem {
 
         JOptionPane.showInputDialog(null, " Which appointment would you like to view?");
 
+
+        int response = -1;
+
+        response = JOptionPane.showConfirmDialog(null, "add appointment?","Confirm", JOptionPane.YES_NO_CANCEL_OPTION);
+
+        while (response == 0){
+
+
+            response = JOptionPane.showConfirmDialog(null, "add another?","Confirm", JOptionPane.YES_NO_CANCEL_OPTION);
+
+        }
+
+
+        for(int i = 0; i < allAppointments.length; i++) {
+
+
+        }
+
+        JOptionPane.showMessageDialog(null,"Robots: ","Message" ,JOptionPane.INFORMATION_MESSAGE);
+
+
         JOptionPane.showMessageDialog(null, "showing appointment - details  are as follows: \n"
                 , "PLaying track", JOptionPane.INFORMATION_MESSAGE);
 
         JOptionPane.showMessageDialog(null,textArea,"appointment Information",JOptionPane.INFORMATION_MESSAGE);
-
-
-
-
-
-
-
-
-
-
 
 
 
